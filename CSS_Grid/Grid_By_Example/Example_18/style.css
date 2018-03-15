@@ -1,9 +1,8 @@
 /*
 
-If you declare a Grid on an element and do not position the child elements then the auto-placememt algorithm dictates what the browser should do about those unplaced grid items.
+The default behavior of Grid Auto Flow is to layout the elements by row, working along the row until there are no more slots then moving on to the next row. If a row is not declared then an implicit grid track will be created to hold the items.
 
-In this example I have a set of 12 boxes. I’ve used nth-child to switch the background color on the even boxes to make this example clear. I have declared a Grid and created rows and columns but not positioned any of the children. As you can see the boxes all lay out on the Grid despite having no placement assigned to them.
-*/
+You can change this behavior by using the grid-auto-flow property. The default value is row but you can also specify column. The elements will then be laid out column by column, adding new columns if needed.*/
 
 * {
   font-family: sans-serif;
@@ -19,6 +18,8 @@ body {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: repeat(6, auto);
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-flow: column;
 
 }
 .box{
