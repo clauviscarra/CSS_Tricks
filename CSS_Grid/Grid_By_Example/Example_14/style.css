@@ -1,0 +1,58 @@
+/*
+
+A key thing in Grid is that the order of items in the source does not matter, as long as they are children of the element that has been declared as a grid. In this example I have some content and then some ads which I have placed right at the bottom of the source. I can use Grid to visually display these in between sections of content.
+
+I could then use Media Queries to display them elsewhere in a wider layout.
+
+Important! For accessibility purposes the logical order should be set in the source. Do not use Grid properties to adjust the logical order of your document.
+
+
+*/
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  font-size: 150%;
+}
+
+.wrapper {
+  width: 400px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: #fff;
+  color: #444;
+}
+
+.section1 {
+  grid-row: 1 / 2;
+}
+
+.section2 {
+  grid-row: 3 / 4;
+}
+
+.section3 {
+  grid-row: 5 / 6;
+}
+
+.ad1 {
+  grid-row: 2 / 3;
+}
+
+.ad2 {
+  grid-row: 4 / 5;
+}

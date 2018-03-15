@@ -1,0 +1,65 @@
+/*
+
+We can easily redefine the grid and the position of the elements on it using Media Queries. I define the Grid Areas as before outside of the Media Queries and then redefine the Grid Tracks and the position of the elements onto that grid inside my Media Queries.
+
+
+
+*/
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.sidebar2 {
+  grid-area: sidebar2;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  margin: 40px;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer"
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+@media only screen and (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+  }
+}
