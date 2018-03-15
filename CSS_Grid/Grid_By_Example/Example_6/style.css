@@ -1,0 +1,56 @@
+/*
+We can also span using the span keyword. This example creates the same layout as the one in example 5. I am using the span keyword rather than targeting the Grid Line by number. I am also using the defaults for row and column end, which is to span 1.
+
+*/
+
+* {
+  font-family: sans-serif;
+}
+
+body{
+  max-width: 1920px;
+  margin:0 auto;
+  /*centering wrapper*/
+}
+
+/* Parent element */
+
+.wrapper{
+  max-width: 320px;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap:10px;
+  background-color: #fff;
+  color: #444;
+}
+
+/* Direct children (child) */
+.box{
+  background-color: #444;
+  color:#fff;
+  border-radius: 5px;
+  padding:20px;
+  font-size:150%;
+  text-align: center;
+}
+
+.a {
+  grid-column: 1;
+  grid-row: 2;
+}
+.b {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+
+}
+.c {
+  grid-column: 2;
+  grid-row: 2;
+
+}
+.d {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+
+}

@@ -1,0 +1,39 @@
+/*
+To define a Grid use display:grid or display:inline-grid on the parent element. You can then create a grid using the grid-template-columns and grid-template-rows properties.
+
+I am using the grid-gap property to create a gap between my columns and rows of 10px. This property is a shorthand for grid-column-gap and grid-row-gap so you can set these values individually.
+
+All direct children of the parent now become grid items and the auto-placement algorithm lays them out, one in each grid cell. Creating extra rows as needed.
+
+*/
+
+* {
+  font-family: sans-serif;
+}
+
+body{
+  max-width: 1920px;
+  margin:0 auto;
+  /*centering wrapper*/
+}
+
+/* Parent element */
+
+.wrapper{
+  max-width: 320px;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap:10px;
+  background-color: #fff;
+  color: #444;
+}
+
+/* Direct children (child) */
+.box{
+  background-color: #444;
+  color:#fff;
+  border-radius: 5px;
+  padding:20px;
+  font-size:150%;
+}

@@ -1,0 +1,60 @@
+/*
+We can achieve the same result as in example 2 using a shorthand syntax declaring the start and end values at once. Values are separated with a / and again it would be valid to omit the / and the end value as we are spanning only one track.
+
+*/
+
+* {
+  font-family: sans-serif;
+}
+
+body{
+  max-width: 1920px;
+  margin:0 auto;
+  /*centering wrapper*/
+}
+
+/* Parent element */
+
+.wrapper{
+  max-width: 320px;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap:10px;
+  background-color: #fff;
+  color: #444;
+}
+
+/* Direct children (child) */
+.box{
+  background-color: #444;
+  color:#fff;
+  border-radius: 5px;
+  padding:20px;
+  font-size:150%;
+}
+
+.a {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.b {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.c {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.d {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.e {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.f {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
