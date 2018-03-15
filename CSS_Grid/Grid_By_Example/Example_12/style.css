@@ -1,0 +1,50 @@
+/*
+
+If I add a footer to my markup and define a grid-area and place it on the grid using grid-template-areas you can see that it sits below the content column. There is no clearing required as this footer has a track on the grid, it can’t hop up into another track.
+
+This example also shows the issue described in example 5, by default the background on the sidebar should stretch to full height, in a similar way to the defaults for Flexbox.
+
+*/
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 40px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 120px 120px 120px;
+  grid-template-areas: ". header  header" "sidebar content content" "footer footer footer";
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
