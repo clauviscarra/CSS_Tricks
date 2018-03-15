@@ -1,0 +1,36 @@
+/*
+
+If you declare a Grid on an element and do not position the child elements then the auto-placememt algorithm dictates what the browser should do about those unplaced grid items.
+
+In this example I have a set of 12 boxes. I’ve used nth-child to switch the background color on the even boxes to make this example clear. I have declared a Grid and created rows and columns but not positioned any of the children. As you can see the boxes all lay out on the Grid despite having no placement assigned to them.
+*/
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  width: 100%;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(6, auto);
+
+}
+.box{
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+
+}
+
+.box:nth-child(even){
+  background-color: #ccc;
+  color: #000;
+}
