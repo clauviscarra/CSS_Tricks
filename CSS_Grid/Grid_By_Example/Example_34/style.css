@@ -1,0 +1,33 @@
+/*
+The repeat syntax can take a track-list rather than a single value, this means you can repeat a more complex track-list.*/
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  border: 1px solid gray;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, 200px 80px);
+}
+
+.box {
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 150%;
+}
+
+.box:nth-child(even){
+  background-color: #ccc;
+  color: #000;
+}
