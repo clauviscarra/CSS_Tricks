@@ -1,0 +1,45 @@
+/*
+Demonstrating the difference between the auto-fill and auto-fit keywords. You’ll need Chrome 55 or Firefox with Grid enabled to see the difference.
+
+In the first example we use the auto-fill keyword for repeat. We get as many tracks with a minimum of 200 pixels and maximum of 1fr as will fit in the container.
+
+In the second example we use the auto-fit keyword for repeat. We get as many tracks with a minimum of 200 pixels and maximum of 1fr as will fit in the container.
+
+After auto-placement any empty tracks are collapsed to 0. So our items can expand to take up the remaining space.*/
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+}
+
+    .wrapper {
+        display: grid;
+    border:1px solid #000;
+    grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    margin-bottom: 2em;
+    }
+
+.wrapper2 {
+        display: grid;
+    border:1px solid #000;
+    grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    }
