@@ -1,0 +1,27 @@
+/*
+In this example I am creating a three column track grid. The first column track has a minimum width of 200px and a maximum of 1fr defined using minmax() notation. The other two tracks are fixed at 200 pixels.*/
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  width: 100%;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: minmax(200px, 1fr) 200px 200px;
+}
+
+.box{
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 150%;
+
+}
