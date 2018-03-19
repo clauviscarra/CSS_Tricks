@@ -3,13 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Example 1</title>
+  <title>Example 1 (slide)</title>
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript">
 
 $(document).ready(function(){
 
+  // To trigger an element's transition, toggle a class name on that element that triggers it.
+  //
+  // To pause an element's transition, use getComputedStyle and getPropertyValue at the point in the transition you want to pause it. Then set those CSS properties of that element equal to those values you just got.
+  
     var boxOne = document.getElementsByClassName('box')[0],
       $boxTwo = $('.box:eq(1)');
 
@@ -44,6 +48,7 @@ $(document).ready(function(){
 </head>
 
 <body>
+
 
   <h3>Pure Javascript</h3>
   <div class='box'></div>
