@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example 1 (Rotating Square)</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+      var $box = $('.box');
+
+      $('.button').on('click', function(){
+        if($(this).html() === 'click hur'){
+          $(this).html('click hur again');
+          $box.addClass('box1');
+        } else{
+          $(this).html('click hur');
+          $box.removeClass('box1');
+        }
+
+
+
+      });
+
+
+    });
+
+    </script>
+  </head>
+  <body>
+
+      <div class="box">
+        hola!
+      </div>
+      <br><br><br><br><br><br><br><br>
+    <button class="button" value="click hur">click hur</button>
+
+  </body>
+</html>
