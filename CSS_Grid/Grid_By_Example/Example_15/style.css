@@ -29,7 +29,7 @@ body {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: repeat(5, [col] 100px);
-  grid-template-rows: repeat (3, [row] auto);
+  grid-template-rows: repeat(3, [row] auto);
   background-color: #fff;
   color: #444;
 }
