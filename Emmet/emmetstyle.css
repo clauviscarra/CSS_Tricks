@@ -1,0 +1,136 @@
+body{
+  position: absolute;
+  text-align: center;
+  margin: 12px;
+  top: 100%;
+  color: #ff0;
+  color: rgba(200, 125, 123, .2);
+  border: 1px;
+  border: 1px solid #ff0;
+  color: rgba(255, 255, 0, 0.3);
+  margin: 12rem;
+  padding: 80em;
+  position: absolute;
+  padding: ;
+  position: relative;
+  border-radius: ;
+  border-right: ;
+
+}
+
+.cta{
+  /* lg(left, 10%, #f00, #000) */
+  background-image: -webkit-linear-gradient(left, 10%, #f001, #000);
+  background-image: -o-linear-gradient(left, 10%, #f001, #000);
+  background-image: linear-gradient(to right, 10%, #f001, #000);
+}
+
+
+.overlay{
+  /* posa+t0+b0+l0+r0 */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
+  /* m12-auto+p8-12p */
+  margin: 12px auto;
+  padding: 8px 12%;
+
+
+}
+
+.menu{
+  /* bg+ */
+  background: #fff url() 0 0 no-repeat;
+
+  /* border: 10px dashed #000; b+ */
+  font: 1em Arial,sans-serif;
+  -webkit-transform: all;
+  -ms-transform: all;
+  transform: all;
+
+/* -ts */
+  -webkit-text-shadow: 12px 12px blur #000;
+  -moz-text-shadow: 12px 12px blur #000;
+  -ms-text-shadow: 12px 12px blur #000;
+  -o-text-shadow: 12px 12px blur #000;
+  text-shadow: 12px 12px blur #000;
+
+}
+
+body{
+
+  /* p12px! */
+  padding: 12px !important;
+
+  /* trf:s */
+-webkit-transform: scale(12px, 4px);
+-ms-transform: scale(12px, 4px);
+transform: scale(12px, 4px);
+}
+
+
+/* @f+ */
+
+@font-face {
+  font-family: 'FontName';
+  src: url('FileName.eot');
+  src: url('FileName.eot?#iefix') format('embedded-opentype'),
+     url('FileName.woff') format('woff'),
+     url('FileName.ttf') format('truetype'),
+     url('FileName.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+/* @kf    LEARN THIS*/
+
+@-webkit-keyframes fade {
+  0% { opacity:0; }
+  100% { opacity:1 }
+}
+@-o-keyframes fade {
+  0% { opacity:0; }
+  100% { opacity:1 }
+}
+@-moz-keyframes fade {
+  0% { opacity:0; }
+  100% { opacity:1 }
+}
+@keyframes fade {
+  0% { opacity:0; }
+  100% { opacity:1 }
+}
+
+
+
+body{
+  margin: 12px;
+  /* press ctrl or alt plus top or bottom arrow to increase by 1 or .1 */
+}
+
+.panel{
+
+
+  width: 20916888px;
+  /*  make math equations by x+y + command shift Y*/
+}
+
+
+.panel{
+  -webkit-transform: scale(.10, 4);
+  -ms-transform: scale(.10, 4);
+  transform: scale(.10, 4);
+
+  /* reflect values by pressing command r */
+}
+
+
+.panel{
+
+
+}
